@@ -1,0 +1,41 @@
+Sorting program by ... Captain Smartypants
+Value of i: 0, array value at position 0 is 3
+Found smaller value, 2, at position 4; updating bestIdx
+Found smaller value, -6, at position 8; updating bestIdx
+Swapping -6 at position 8 with 3 at position 0
+Value of i: 1, array value at position 1 is 5
+Found smaller value, 2, at position 4; updating bestIdx
+Swapping 2 at position 4 with 5 at position 1
+Value of i: 2, array value at position 2 is 7
+Found smaller value, 5, at position 4; updating bestIdx
+Found smaller value, 3, at position 5; updating bestIdx
+Swapping 3 at position 5 with 7 at position 2
+Value of i: 3, array value at position 3 is 9
+Found smaller value, 5, at position 4; updating bestIdx
+Found smaller value, 3, at position 8; updating bestIdx
+Swapping 3 at position 8 with 9 at position 3
+Value of i: 4, array value at position 4 is 5
+Swapping 5 at position 4 with 5 at position 4
+Value of i: 5, array value at position 5 is 7
+Found smaller value, 5, at position 6; updating bestIdx
+Swapping 5 at position 6 with 7 at position 5
+Value of i: 6, array value at position 6 is 7
+Found smaller value, 6, at position 7; updating bestIdx
+Swapping 6 at position 7 with 7 at position 6
+Value of i: 7, array value at position 7 is 7
+Swapping 7 at position 7 with 7 at position 7
+Value of i: 8, array value at position 8 is 9
+Found smaller value, 8, at position 9; updating bestIdx
+Swapping 8 at position 9 with 9 at position 8
+Value of i: 9, array value at position 9 is 9
+Swapping 9 at position 9 with 9 at position 9
+-6
+2
+3
+3
+5
+5
+6
+7
+8
+9
