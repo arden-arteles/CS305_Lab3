@@ -1,5 +1,5 @@
 Hightest scoring player:
-Name: (null)
-X position: 0
-Y position: 0
-Points: 0
+Name: Sally
+X position: 40
+Y position: 20
+Points: 1000

@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /* player struct */
 struct player {
@@ -22,20 +23,24 @@ int find_max(player * game_state, int len) {
   if(len <= 0) {
     return -1;
   }
-  int max_points = game_state[0].points;
+  // int max_points = game_state[0].points;
   /* lab exercise:  complete the rest of the function to return the index
      of the player with the highest score */
   for(i = 0; i < len; i++){
     if (game_state[i].points > game_state[0].points)
     {
-      max_points = max_points + game_state[i].points;
+      to_return = i;
+      // ok so the following was NOT the objective of the function
+      // see: lowest *index*
+      // max_points = max_points + game_state[i].points;
     }
     // write code to check if game_state[i].points is bigger than max so far
     // if so, then update max_points and to_return appropriately
    
     
   }
-  return max_points;
+  return to_return;
+  // return max_points;
 }
 
 /* usage: player <input file name> <output file name>
@@ -88,13 +93,13 @@ int main(int argc, char * argv[]) {
   char * points_read = NULL;
   for(i=0; i<count; i++) {
     // get name
-    getline(&name_read, &num_bytes, fp);
-    game_state[i].name = name_read;
+    // getline(&name_read, &num_bytes, fp);
+    // game_state[i].name = name_read;
     //part 3, question 8, comment out the above two lines and
     // uncomment the first or the second line below (not both). 
     // recompile and re-run your code.
-    //game_state[i].name = strdup(name_read);
-    //fscanf(fp,"%ms\n", &(game_state[i].name));
+    // game_state[i].name = strdup(name_read);
+    fscanf(fp,"%ms\n", &(game_state[i].name));
     // get x location
     getline(&x_loc_read, &num_bytes, fp);
     game_state[i].x_loc = atoi(x_loc_read);
